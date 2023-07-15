@@ -1,0 +1,145 @@
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+	--color-light: white;
+	--color-dark: #212121;
+	--color-signal: #bbbbbb;
+	--color-background: var(--color-light);
+	--color-text: var(--color-dark);
+	--color-accent: var(--color-signal);
+	--size-bezel: 0.5rem;
+	--size-radius: 4px;
+	line-height: 1.4;
+	font-family: "Inter", sans-serif;
+	font-size: calc(0.6rem + 0.4vw);
+	color: var(--color-text);
+	background: var(--color-background);
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 900;
+}
+
+mark {
+	background: var(--color-accent);
+	color: var(--color-text);
+	font-weight: bold;
+	padding: 0 0.2em;
+}
+
+.card {
+	background: var(--color-background);
+	padding: calc(4 * var(--size-bezel));
+	margin-top: calc(4 * var(--size-bezel));
+	border-radius: var(--size-radius);
+	border: 3px solid var(--color-shadow, currentColor);
+	box-shadow: 0.5rem 0.5rem 0 var(--color-shadow, currentColor);
+}
+
+.card--inverted {
+	--color-background: var(--color-dark);
+	color: var(--color-light);
+	--color-shadow: var(--color-accent);
+}
+
+.card--accent {
+	--color-background: var(--color-signal);
+	--color-accent: var(--color-light);
+	color: var(--color-dark);
+}
+
+.card *:first-child {
+	margin-top: 0;
+}
+
+.l-design-widht {
+	max-width: 40rem;
+	padding: 1rem;
+}
+
+.input {
+	position: relative;
+	width: 100%;
+}
+
+.input__label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * 0.5);
+	margin: calc(var(--size-bezel) * 1 + 0px) calc(var(--size-bezel) * 1.5);
+	background: #bbbbbb;
+	white-space: nowrap;
+	transform: translate(0, 0);
+	transform-origin: 0 0;
+	background: var(--color-background);
+	transition: transform 120ms ease-in;
+	line-height: 1.2;
+}
+
+.input__field {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	border: 1px solid #C5C5C5;
+	border-radius: 5px;
+	color: currentColor;
+	background-color: transparent;
+	border-radius: var(--size-radius);
+}
+
+.form-control, .input__field, .css-1s2u09g-control, .css-2613qy-menu, .react-tel-input, .input__label, .css-1pahdxg-control, .css-1s2u09g-control, .availability_time_zone {
+	font-size: 14px !important;
+	font-family: 'Poppins' !important;
+}
+
+.input__field:not(:-moz-placeholder-shown)+.input__label {
+	transform: translate(0.25rem, -65%) scale(0.8);
+	color: var(--color-accent);
+}
+
+.input__field:not(:-ms-input-placeholder)+.input__label {
+	transform: translate(0.25rem, -65%) scale(0.8);
+	color: var(--color-accent);
+}
+
+.input__field:focus+.input__label, .input__field:not(:placeholder-shown)+.input__label {
+	transform: translate(0.25rem, -65%) scale(0.8);
+	color: var(--color-accent);
+	margin: calc(var(--size-bezel) * 1.1 + 0px) calc(var(--size-bezel) * 1.5);
+}
+
+.button-group {
+	margin-top: calc(var(--size-bezel) * 2.5);
+}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin-right: 0.5em;
+}
+
+.hidden {
+	display: none;
+}
+
+form.form-read-only .input__label.input__label_disabled, form.form-read-only .form-control:disabled, form.form-read-only .form-control[readonly], form.form-read-only .form-select:disabled, form.form-read-only .input__field .css-1insrsq-control, form.form-read-only .input, .input .form-control:disabled {
+	background-color: #ffffff;
+	cursor: not-allowed;
+}
+
+.input__field:focus+.input__label .text-danger, .input__field:not(:placeholder-shown)+.input__label .text-danger {
+	display: inline-block;
+}
+
+.input__field+.input__label .text-danger {
+	display: none;
+}
+
+.form-check-input:checked {
+	background-color: #f5be17;
+	border-color: #f5be17;
+}

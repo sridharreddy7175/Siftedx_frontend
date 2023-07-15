@@ -1,0 +1,31 @@
+export interface JobListItemResponse {
+    category_code: string;
+    company_uuid: string;
+    created_dt: Date;
+    experience: number;
+    id: number;
+    instructions_to_sme: string;
+    is_favourite: boolean;
+    job_description: string;
+    job_due_dt: Date;
+    job_mandatory_skills: string;
+    job_mandatory_skills_exp: string;
+    job_mandatory_skills_proficiency: string;
+    job_optional_skills: string;
+    job_optional_skills_exp: string;
+    job_optional_skills_proficiency: string;
+    job_start_dt: Date;
+    job_title: string;
+    location: string;
+    positions: number;
+    seniority_code: string;
+    status: string;
+    tags: string;
+    total_candidates: number;
+    total_candidates_completed: number;
+    total_candidates_pending: number;
+    total_candidates_rescheduled: number;
+    total_candidates_scheduled: number;
+    updated_dt: Date;
+    uuid: string;
+}

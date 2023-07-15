@@ -1,0 +1,190 @@
+.multi-step-navbar {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+.multi-step-navbar .step.disabled {
+  cursor: not-allowed;
+}
+.multi-step-navbar .step.disabled .circle {
+  background-color: #dddddd;
+}
+.multi-step-navbar .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 3em;
+  position: relative;
+}
+.multi-step-navbar .step .circle {
+  padding: 1em;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a4d9f7;
+  z-index: 1;
+}
+.multi-step-navbar .step .connector-left {
+  position: absolute;
+  border-bottom: 0;
+  border-top: 2px solid;
+  width: 50%;
+  left: -1px !important;
+  top: 1.5em;
+  z-index: 0;
+}
+.multi-step-navbar .step .connector-right {
+  position: absolute;
+  border-bottom: 0;
+  border-top: 2px solid;
+  width: 50%;
+  left: 50%;
+  top: 1.5em;
+  z-index: 0;
+}
+.multi-step-navbar .step.active .circle {
+  background-color: #FFC408;
+  color: white;
+}
+.multi-step-navbar .step:last-child {
+  margin-right: 0;
+}
+
+.m-multi-select-checkbox {
+  position: relative;
+  width: 100%;
+}
+.m-multi-select-checkbox .placeholder {
+  background: white;
+  border: 1px solid lightgray;
+  padding: 1em;
+  border-radius: 0.5em;
+  color: black;
+}
+.m-multi-select-checkbox .arrow-icon {
+  color: black;
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+}
+.m-multi-select-checkbox .options-container {
+  padding: 1em;
+  background: white;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.m-multi-select-checkbox .options-container .m-search-box {
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid lightgray;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+.m-multi-select-checkbox .options-container .m-search-focus:focus {
+  border: 1px solid lightgray !important;
+  border-style: none !important;
+}
+.m-multi-select-checkbox .options-container .options-list {
+  padding: 0;
+  list-style: none;
+}
+.m-multi-select-checkbox .options-container .options-list li input[type=checkbox] {
+  margin-right: 1em;
+}
+.m-multi-select-checkbox .options-container .m-mask {
+  position: fixed;
+  background-color: lightgray;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.nav-menu-tabs-container {
+  position: relative;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+.nav-menu-tabs-container .nav-menu-tabs-bar {
+  display: flex;
+  overflow-x: auto;
+}
+.nav-menu-tabs-container .nav-menu-tabs-bar .nav-menu-tab {
+  padding: 5px !important;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #9c9c9c !important;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.nav-menu-tabs-container .nav-menu-tabs-bar .nav-menu-tab p {
+  margin: 0;
+  color: #ffffff;
+}
+.nav-menu-tabs-container .nav-menu-tabs-bar .nav-menu-tab.active {
+  background-color: #000000 !important;
+}
+.nav-menu-tabs-container .nav-menu-tabs-bar .nav-menu-tab.active {
+  background-color: #000000 !important;
+}
+.nav-menu-tabs-container .nav-arrow {
+  width: 50px;
+  height: 100%;
+  background-image: url("./../icon_images/slider-next.svg");
+  position: absolute;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  top: 0;
+  cursor: pointer;
+}
+.nav-menu-tabs-container .left-arrow {
+  left: 0;
+  transform: rotate(180deg);
+  background-position-x: right;
+  background-position-y: center;
+}
+.nav-menu-tabs-container .right-arrow {
+  right: 0;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+.popup_overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.job-list-item .job-actions-link:hover .job-list-actions {
+  display: block;
+}
+.job-list-item .job-list-actions {
+  display: none;
+  right: 0;
+  top: calc(100% - 5px);
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.job-list-item .job-list-actions .job-list-action-item {
+  color: #1E1E1E;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0.3rem 1.5rem 0.3rem 0;
+}
+.job-list-item .job-list-actions .job-list-action-item:not(:last-child) {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.1215686275);
+}
+
+/*# sourceMappingURL=style.css.map */

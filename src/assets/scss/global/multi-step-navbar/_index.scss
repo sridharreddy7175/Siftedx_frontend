@@ -1,0 +1,131 @@
+.multi-step-navbar {
+    margin         : 0;
+    list-style     : none;
+    display        : flex;
+    padding        : 0;
+    justify-content: center;
+
+    .step.disabled {
+        cursor: not-allowed;
+
+        .circle {
+            background-color: #dddddd;
+        }
+    }
+
+    .step {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        cursor        : pointer;
+        padding-right : 3em;
+        position      : relative;
+
+        .circle {
+            padding         : 1em;
+            border-radius   : 50%;
+            width           : 3em;
+            height          : 3em;
+            display         : flex;
+            justify-content : center;
+            align-items     : center;
+            background-color: #a4d9f7;
+            z-index         : 1;
+        }
+
+        .connector-left {
+            position       : absolute;
+            border-bottom  : 0;
+            border-top     : 2px solid;
+            // border-style: dashed;
+            width          : 50%;
+            left           : -1px !important;
+            top            : 1.5em;
+            z-index        : 0;
+        }
+
+        .connector-right {
+            position       : absolute;
+            border-bottom  : 0;
+            border-top     : 2px solid;
+            // border-style: dashed;
+            width          : 50%;
+            left           : 50%;
+            top            : 1.5em;
+            z-index        : 0;
+        }
+    }
+
+    .step.active {
+        .circle {
+            background-color: #FFC408;
+            color           : white;
+        }
+    }
+
+    .step:last-child {
+        margin-right: 0;
+    }
+}
+
+.m-multi-select-checkbox {
+    position: relative;
+    width   : 100%;
+
+    .placeholder {
+        background   : white;
+        border       : 1px solid lightgray;
+        padding      : 1em;
+        border-radius: 0.5em;
+        color        : black;
+    }
+
+    .arrow-icon {
+        color    : black;
+        font-size: 20px;
+        float    : right;
+        cursor   : pointer;
+    }
+
+    .options-container {
+        padding   : 1em;
+        background: white;
+        position  : absolute;
+        width     : 100%;
+        z-index   : 999;
+
+        .m-search-box {
+            width        : 100%;
+            margin-bottom: 1em;
+            border       : 1px solid lightgray;
+            border-radius: 0.5em;
+            padding      : 0.5em;
+        }
+
+        .m-search-focus:focus {
+            border      : 1px solid lightgray !important;
+            border-style: none !important
+        }
+
+        .options-list {
+            padding   : 0;
+            list-style: none;
+
+            li {
+                input[type='checkbox'] {
+                    margin-right: 1em;
+                }
+            }
+        }
+
+        .m-mask {
+            position        : fixed;
+            background-color: lightgray;
+            width           : 100vw;
+            height          : 100vh;
+            top             : 0;
+            left            : 0;
+            // z-index: -1;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.job-list-item {
+    .job-actions-link:hover {
+        .job-list-actions {
+            display: block;
+        }
+    }
+    .job-list-actions {
+        display: none;
+        right: 0;
+        top: calc(100% - 5px);
+        position: absolute;
+        background-color: #ffffff;
+        z-index: 1;
+        .job-list-action-item {
+            color: #1E1E1E;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 0.3rem 1.5rem 0.3rem 0;
+        }
+        .job-list-action-item:not(:last-child) {
+            border-bottom: 1px solid #7070701F;
+        }
+    }
+}
